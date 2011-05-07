@@ -9,7 +9,7 @@ Medical::NHSNumber - Check if an NHS number is valid
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -161,6 +161,10 @@ L<http://cpanratings.perl.org/d/Medical-NHSNumber>
 =item * Search CPAN
 
 L<http://search.cpan.org/dist/Medical-NHSNumber/>
+
+=item * Source code
+
+The source code can be found on github L<https://github.com/spiros/Medical-NHSNumber>
 
 =back
 
