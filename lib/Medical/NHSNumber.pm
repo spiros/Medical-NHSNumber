@@ -9,11 +9,11 @@ Medical::NHSNumber - Check if an NHS number is valid
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 
 =head1 SYNOPSIS
@@ -71,15 +71,15 @@ my $RH_WEIGHTS = {
 sub is_valid {
     my $number = shift;
 
-    return undef
+    return 
         unless ( defined $number);
     
     my @digits = split //, $number;
     
-    return undef
+    return 
         unless ( scalar(@digits) == 10 );
     
-    return undef
+    return 
         unless ( $number =~ /\d{10}/ );
     
     ##
@@ -118,7 +118,7 @@ sub is_valid {
     if ( 
         $calculated_check_digit == 10 ||
         $calculated_check_digit != $check_digit ) {
-        return undef;
+        return ;
     } else {
         return 1;
     }

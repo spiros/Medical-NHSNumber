@@ -52,3 +52,7 @@ foreach my $rh_test ( @$rah_tests ) {
     );
     
 }
+
+my $silly    = '12345';
+my @is_valid = Medical::NHSNumber::is_valid($silly);
+ok( ! @is_valid, 'List-context test' );
